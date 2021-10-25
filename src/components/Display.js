@@ -16,6 +16,10 @@ const styles = StyleSheet.create({
     displayValue: {
         fontSize: 60,
         color: '#fff',
+    },
+    operation: {
+        fontSize: 30,
+        color: '#e1e1e1',
     }
 })
 
@@ -24,6 +28,8 @@ const Display = props => {
         <View style={styles.display}>
             <Text style={styles.displayValue}
                 numberOfLines={1}>{props.value}</Text>
+            <Text style={styles.operation}
+                numberOfLines={1}>{props.operation}</Text>
         </View>
     )
 }
