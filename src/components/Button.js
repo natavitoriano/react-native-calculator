@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
 const Button = props => {
     const stylesButton = [styles.button]
     if(props.double) stylesButton.push(styles.buttonDouble)
-    if(props.tiple) stylesButton.push(styles.buttonTriple)
+    if(props.triple) stylesButton.push(styles.buttonTriple)
     if(props.operation) stylesButton.push(styles.operationButton)
     return (
         <TouchableHighlight onPress={props.onClick}>
